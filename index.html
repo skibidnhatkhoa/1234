@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CYBER MARIO BIRD</title>
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+
+  <div class="background"></div>
+
+  <div class="stars"></div>
+
+  <!-- UI -->
+
+  <div class="hud">
+
+    <div class="logo">
+
+      CYBER
+      <span>BIRD</span>
+
+    </div>
+
+    <div class="score-panel">
+
+      <div class="score-box">
+
+        SCORE
+
+        <span id="score">
+          0
+        </span>
+
+      </div>
+
+      <div class="score-box">
+
+        BEST
+
+        <span id="bestScore">
+          0
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- START SCREEN -->
+
+  <div
+    class="menu"
+    id="menu"
+  >
+
+    <h1>
+      CYBER FLAPPY
+    </h1>
+
+    <p>
+      Press SPACE or CLICK
+    </p>
+
+    <button id="playBtn">
+      START GAME
+    </button>
+
+  </div>
+
+  <!-- GAME OVER -->
+
+  <div
+    class="game-over hidden"
+    id="gameOver"
+  >
+
+    <h2>
+      GAME OVER
+    </h2>
+
+    <p>
+
+      FINAL SCORE:
+      <span id="finalScore">
+        0
+      </span>
+
+    </p>
+
+    <button id="restartBtn">
+      PLAY AGAIN
+    </button>
+
+  </div>
+
+  <!-- CANVAS -->
+
+  <canvas id="game"></canvas>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
